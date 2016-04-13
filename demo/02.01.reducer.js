@@ -11,6 +11,7 @@ function taskApp(state = initialState, action) {
             });
             
         case 'ADD_TASK':
+            console.log('-> ADD_TASK Action');
             return Object.assign({}, state, {
                 tasks: [...state.tasks, {
                     name: action.name,
